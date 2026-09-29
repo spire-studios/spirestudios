@@ -4,7 +4,13 @@
     --accent-blue: #3b82f6;
     --text-main: #f8fafc;
     --text-dim: #94a3b8;
+    --hero-back: #08112d;
+    --hero-drop: rgba(59, 130, 246, 0.3);
+    --nav-bar: rgba(10, 15, 29, 0.8);
+    --game-back: #111827;
+    --game-center: #0a0f1d;
 }
+
 
 * {
     margin: 0;
@@ -20,6 +26,19 @@ body {
     overflow-x: hidden;
     scrollbar-color: var(--navy) var(--deep-space);
     scrollbar-width: thin; /* Optional: makes the scrollbar thinner */
+}
+
+body.halloween {
+    --navy: #200b00;
+    --deep-space: #100600;
+    --accent-blue: #ff5100;
+    --text-main: #fcfaf8;
+    --text-dim: #cf815d;
+    --hero-back: #000000;
+    --hero-drop: #c03d0053;
+    --nav-bar: rgba(83, 42, 6, 0.8);
+    --game-back: #802900;
+    --game-center: #401500;
 }
 
 /* For WebKit and Chromiums (Chrome, Safari, Edge) */
@@ -44,7 +63,7 @@ body::-webkit-scrollbar-thumb {
     top: 0;
     width: 100%;
     padding: 1.5rem 0;
-    background: rgba(10, 15, 29, 0.8);
+    background: var(--nav-bar);
     backdrop-filter: blur(10px);
     z-index: 1000;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -115,14 +134,14 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: center;
     position: relative;
-    background: radial-gradient(circle at center, #214082 0%, #08112d 70%);
+    background: radial-gradient(circle at center, var(--navy) 0%, var(--hero-back) 70%);
     border-bottom: 2px solid white;
 }
 
 .hero-logo {
     max-width: 600px;
     width: 80%;
-    filter: drop-shadow(0 0 30px rgba(59, 130, 246, 0.3));
+    filter: drop-shadow(0 0 30px var(--hero-drop));
     margin-bottom: 2rem;
 }
 
@@ -153,17 +172,16 @@ body::-webkit-scrollbar-thumb {
 h2 { font-size: 2.5rem; letter-spacing: 2px; margin-top: 10px; }
 
 .featured-game {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background: linear-gradient(135deg, #111827 0%, #0a0f1d 100%);
+    display: flex;
+    background: linear-gradient(135deg, var(--game-back) 0%, var(--game-center) 100%);
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 12px;
     overflow: hidden;
 }
 
-.game-info { padding: 60px; display: flex; flex-direction: column; justify-content: center; }
+.game-info { padding: 60px; display: flex; flex-direction: column; justify-content: center; flex: 1;}
 
-.game-info h3 { font-size: 1.8rem; margin-bottom: 20px; color: var(--accent-blue); }
+.game-info h3 { font-size: 1.8rem; margin-bottom: 20px; color: var(--accent-blue); width:100%;}
 
 .ghost-btn {
     width: fit-content;
@@ -180,14 +198,19 @@ h2 { font-size: 2.5rem; letter-spacing: 2px; margin-top: 10px; }
 .ghost-btn:hover { background: white; color: black; }
 
 .game-visual {
-    background: #111827;
+    background: var(--game-back);
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    flex-shrink: 0;
 }
 
-.bg-motif { width: 40%; opacity: 0.2; }
+.game-visual img {
+    border-radius: 30px; height: 300px; margin: 40px;
+}
+
+.bg-motif { opacity: 0.2; }
 
 .page-content { padding: 100px 40px; background: #f8fafc; color: var(--deep-space); }
 
@@ -275,7 +298,7 @@ footer { padding: 20px 40px; border-top: 1px solid rgba(255, 255, 255, 0.05); }
     width: 80%;
     max-width: 600px;
     color: var(--text-main);
-    box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 0 30px var(--hero-drop);
 }
 
 .modal-content h2 {

@@ -2,6 +2,13 @@
 let inputBuffer = "";
 const secretCode = "/spire";
 
+
+const today = new Date();
+const month = today.getMonth;
+if (month === 9) {
+    document.body.classList.add("halloween")
+}
+
 document.addEventListener('keydown', (e) => {
     inputBuffer += e.key.toLowerCase();
     

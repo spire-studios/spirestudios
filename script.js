@@ -2,6 +2,7 @@
 let inputBuffer = "";
 const secretCode = "/spire";
 
+
 document.addEventListener('keydown', (e) => {
     inputBuffer += e.key.toLowerCase();
     
@@ -17,6 +18,12 @@ document.addEventListener('keydown', (e) => {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
+        
+    const today = new Date();
+    const month = today.getMonth;
+    if (month === 9) {
+        document.body.classList.add("halloween")
+    }
     // Also keep the subtle footer link for convenience
     const devTrigger = document.getElementById("dev-trigger");
     if (devTrigger) {
