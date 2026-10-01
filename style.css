@@ -29,16 +29,16 @@ body {
 }
 
 body.halloween {
-    --navy: #200b00;
-    --deep-space: #100600;
+    --navy: #380043;
+    --deep-space: #200228;
     --accent-blue: #ff5100;
-    --text-main: #fcfaf8;
+    --text-main: #ffffff;
     --text-dim: #cf815d;
     --hero-back: #000000;
     --hero-drop: #c03d0053;
-    --nav-bar: rgba(83, 42, 6, 0.8);
-    --game-back: #802900;
-    --game-center: #401500;
+    --nav-bar: rgba(57, 6, 83, 0.8);
+    --game-back: #400a51;
+    --game-center: #1e042a;
 }
 
 /* For WebKit and Chromiums (Chrome, Safari, Edge) */
