@@ -175,7 +175,7 @@ h2 { font-size: 2.5rem; letter-spacing: 2px; margin-top: 10px; }
     display: flex;
     background: linear-gradient(135deg, var(--game-back) 0%, var(--game-center) 100%);
     border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
+    border-radius: 30px;
     overflow: hidden;
 }
 
@@ -204,7 +204,7 @@ h2 { font-size: 2.5rem; letter-spacing: 2px; margin-top: 10px; }
     justify-content: center;
     position: relative;
     flex-shrink: 0;
-    padding: 40px;
+    padding: 3%;
 }
 
 .game-visual img {
