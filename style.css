@@ -158,7 +158,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Project Showcase */
-.project-showcase { padding: 120px 40px; max-width: 1400px; margin: 0 auto; }
+.project-showcase { padding: 120px 40px; max-width: 1400px; margin: 0 auto; box-sizing: border-box;}
 
 .section-header { margin-bottom: 60px; }
 
@@ -204,10 +204,11 @@ h2 { font-size: 2.5rem; letter-spacing: 2px; margin-top: 10px; }
     justify-content: center;
     position: relative;
     flex-shrink: 0;
+    padding: 40px;
 }
 
 .game-visual img {
-    border-radius: 30px; height: 300px; margin: 40px;
+    border-radius: 30px; max-height: 300px; max-width: 100%; height: auto; width: auto;
 }
 
 .bg-motif { opacity: 0.2; }
@@ -229,11 +230,20 @@ h2 { font-size: 2.5rem; letter-spacing: 2px; margin-top: 10px; }
   .culture-grid {
     flex-direction: column;
   }
-  .featured-game {
-    grid-template-columns: 1fr;
-  }
   .shortcut {
     display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+    .featured-game {
+    flex-direction: column;
+  }
+  .game-info {
+    flex: 0;
+  }
+  .project-showcase {
+    width: max-content; max-width: 100%;
   }
 }
 
