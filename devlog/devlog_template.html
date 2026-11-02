@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!-- Template File for Website-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title | Spire Studios</title>
+    <link rel="stylesheet" href="devlog.css">
+    <link rel="icon" type="image/x-icon" href="../Lspire_v2.png" id="favicon">
+    <script src="script.js"></script>
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh; /* Viewport height */ margin: 0;">
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <div class="brand"><a href="https://www.spirestudios.org" style="text-decoration: none; color: inherit; display: flex;">
+                <img src="../Lspire_v2.png" alt="Spire Logo" class="nav-icon"></a>
+                <a href="https://www.spirestudios.org" style="text-decoration: none; color: inherit; display: flex;">
+                <span>SPIRE STUDIOS</span></a>
+            </div>
+            <div class="nav-menu">
+                <input class="nav-menu-toggle" type="checkbox" id="nav-menu-toggle" aria-label="Toggle navigation menu">
+                <label class="nav-menu-button" for="nav-menu-toggle">
+                    <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+                </label>
+                <ul class="nav-links">
+                    <li><a href="https://www.spirestudios.org/about" class="shortcut">ABOUT</a></li>
+                    <li><a href="https://www.spirestudios.org/devlog" class="shortcut">DEVLOG</a></li>
+                    <li><button class="contact-pill" id="contact-trigger">CONTACT</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Page content -->
+    <section id="page_body" class="page-content" style="flex: 1; align-items: center; display: flex;">
+        <article class="devlog-article">
+            <header class="devlog-article-header">
+                <a class="devlog-back-link" href="./">&larr; Development Log</a>
+                <div class="devlog-article-meta">
+                    <time datetime="2026-11-02">November 2, 2026</time>
+                    <span class="devlog-meta-divider" aria-hidden="true">/</span>
+                    <span>Studio Update</span>
+                    <span class="devlog-meta-divider" aria-hidden="true">/</span>
+                    <span>5 min read</span>
+                </div>
+                <h1>Building What Comes Next</h1>
+                <p class="devlog-article-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A brief introduction to the ideas, experiments, and small discoveries behind our latest studio update.</p>
+            </header>
+
+            <div class="devlog-article-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae justo vitae erat consequat tincidunt. Integer at neque sed urna tristique finibus. In hac habitasse platea dictumst. Curabitur non magna eu lectus consequat interdum, aenean sed turpis sit amet lorem posuere ullamcorper.</p>
+
+                <h2>A fresh direction</h2>
+                <p>Praesent consequat, nunc non posuere feugiat, neque sapien blandit lectus, vitae tincidunt lectus lorem a justo. Donec volutpat, purus sed commodo malesuada, erat arcu aliquam erat, non tincidunt metus sapien sed purus. Mauris euismod, augue ac dignissim commodo, libero nibh sollicitudin ante, at pretium magna ipsum vel erat.</p>
+                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam vulputate, felis vel consequat facilisis, justo ligula porta velit, vitae sollicitudin massa nibh non lectus. Integer sit amet sem sed magna posuere luctus.</p>
+
+                <blockquote class="devlog-article-quote">
+                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. The best ideas often begin with a small experiment.”</p>
+                </blockquote>
+
+                <h2>What we learned</h2>
+                <p>Aliquam erat volutpat. Suspendisse potenti. Quisque at lectus vitae lacus feugiat mattis. Donec feugiat augue non mi tincidunt, quis ullamcorper sem porttitor. Nunc interdum, orci sed dapibus vulputate, sapien velit placerat justo, vitae viverra odio est vitae velit.</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li>Integer at neque sed urna tristique finibus.</li>
+                    <li>Donec volutpat purus sed commodo malesuada.</li>
+                </ul>
+                <p>Fusce euismod velit id nunc pretium, a vulputate mauris volutpat. Proin tincidunt tortor vitae mauris vestibulum, sed vulputate quam feugiat. Sed blandit, nulla sed suscipit malesuada, libero nibh luctus justo, eget sollicitudin augue sem sit amet arcu.</p>
+
+                <h2>Looking ahead</h2>
+                <p>Nam ac sapien eget ipsum viverra finibus. Cras id erat vitae neque tincidunt tristique. In hac habitasse platea dictumst. We are excited to keep exploring, refining, and sharing more as this work takes shape.</p>
+            </div>
+
+            <footer class="devlog-article-footer">
+                <div class="devlog-tags" aria-label="Article tags">
+                    <span>Development</span>
+                    <span>Studio Notes</span>
+                </div>
+                <a class="devlog-back-link" href="./">&larr; Back to all updates</a>
+            </footer>
+        </article>
+    </section>
+
+    <!-- Footer-->
+    <footer style="flex-shrink: 0;">
+        <div class="footer-bottom">
+            <div style="display: flex; align-items: center;">
+            <img src="../spire_light.png" alt="Small Spire Icon" class="footer-mini-logo">
+            <p>SPIRE STUDIOS</p></div>
+            <div class="socials">
+                <a href="#">X / TWITTER</a>
+                <a href="https://www.youtube.com/@spirestudiosdev">YOUTUBE</a>
+                <a href="#">LINKEDIN</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact Us</h2>
+            <p><strong>Email:</strong> developer@spirestudios.org</p>
+            <p><strong>Social Media:</strong> Follow us on <a href="https://www.youtube.com/@spirestudiosdev" target="_blank">YouTube</a> and other platforms.</p>
+        </div>
+    </div>
+
+</body>
+</html>

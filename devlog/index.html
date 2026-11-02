@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!-- Template File for Website-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Development Log | Spire Studios</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="Lspire_v2.png" id="favicon">
+    <script src="script.js"></script>
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh; /* Viewport height */ margin: 0;">
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <div class="brand"><a href="https://www.spirestudios.org" style="text-decoration: none; color: inherit; display: flex;">
+                <img src="../Lspire_v2.png" alt="Spire Logo" class="nav-icon"></a>
+                <a href="https://www.spirestudios.org" style="text-decoration: none; color: inherit; display: flex;">
+                <span>SPIRE STUDIOS</span></a>
+            </div>
+            <div class="nav-menu">
+                <input class="nav-menu-toggle" type="checkbox" id="nav-menu-toggle" aria-label="Toggle navigation menu">
+                <label class="nav-menu-button" for="nav-menu-toggle">
+                    <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+                </label>
+                <ul class="nav-links">
+                    <li><a href="https://www.spirestudios.org/about" class="shortcut">ABOUT</a></li>
+                    <li><a href="https://www.spirestudios.org/devlog" class="shortcut">DEVLOG</a></li>
+                    <li><button class="contact-pill" id="contact-trigger">CONTACT</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Page content -->
+    <section id="page_body" class="page-content" style="flex: 1; align-items: baseline; display: flex;">
+        <div class="devlog-content">
+            <header class="devlog-header"><br>
+                <p class="devlog-kicker">SPIRE STUDIOS / DEVELOPMENT</p>
+                <h1>Development Log</h1>
+                <p>Find out what we're currently up to and what else is happening at the studio.</p>
+            </header>
+            <p>We currently have no articles. Check back later!</p>
+            <!--
+            <article class="devlog-entry">
+                <div class="devlog-entry-meta">
+                    <time datetime="2026-11-02">November 2, 2026</time>
+                    <span>Game Release</span>
+                </div>
+                <h2>Explosive Enjoyment</h2>
+                <p class="devlog-entry-summary">Try out our new release, Bomb Blitz! Hear about the development process and other important updates.</p>
+                <a class="devlog-read-more" href="#">Read the article <span aria-hidden="true">&rarr;</span></a>
+            </article>
+
+            <article class="devlog-entry">
+                <div class="devlog-entry-meta">
+                    <time datetime="2026-11-02">November 2, 2026</time>
+                    <span>Introduction</span>
+                </div>
+                <h2>What is Spire Studios?</h2>
+                <p class="devlog-entry-summary">Find out who we are, what we do, and what we are currently working on.</p>
+                <a class="devlog-read-more" href="#">Read the article <span aria-hidden="true">&rarr;</span></a>
+            </article>-->
+        </div>
+    </section>
+
+    <!-- Footer-->
+    <footer style="flex-shrink: 0;">
+        <div class="footer-bottom">
+            <div style="display: flex; align-items: center;">
+            <img src="../spire_light.png" alt="Small Spire Icon" class="footer-mini-logo">
+            <p>SPIRE STUDIOS</p></div>
+            <div class="socials">
+                <a href="#">X / TWITTER</a>
+                <a href="https://www.youtube.com/@spirestudiosdev">YOUTUBE</a>
+                <a href="#">LINKEDIN</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact Us</h2>
+            <p><strong>Email:</strong> developer@spirestudios.org</p>
+            <p><strong>Social Media:</strong> Follow us on <a href="https://www.youtube.com/@spirestudiosdev" target="_blank">YouTube</a> and other platforms.</p>
+        </div>
+    </div>
+
+</body>
+</html>

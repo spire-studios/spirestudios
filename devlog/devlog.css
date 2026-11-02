@@ -1,0 +1,139 @@
+@import url("../style.css");
+
+.devlog-article {
+	width: 100%;
+	max-width: 860px;
+	margin: 0 auto;
+	padding: 12px 0;
+}
+
+.devlog-article-header {
+	padding-bottom: 32px;
+	border-bottom: 1px solid rgba(33, 64, 130, 0.2);
+}
+
+.devlog-back-link {
+	display: inline-block;
+	color: var(--navy);
+	font-size: 0.85rem;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.devlog-back-link:hover {
+	color: var(--accent-blue);
+}
+
+.devlog-article-meta {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 8px 12px;
+	margin-top: 32px;
+	color: #475569;
+	font-size: 0.8rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.devlog-meta-divider {
+	color: var(--accent-blue);
+}
+
+.devlog-article-header h1 {
+	margin: 12px 0;
+	color: var(--deep-space);
+	font-size: 2.8rem;
+	line-height: 1.15;
+}
+
+.devlog-article-intro {
+	max-width: 740px;
+	color: #475569;
+	font-size: 1.15rem;
+	line-height: 1.7;
+}
+
+.devlog-article-content {
+	padding: 30px 0;
+	color: #263248;
+	font-size: 1.02rem;
+	line-height: 1.85;
+}
+
+.devlog-article-content p,
+.devlog-article-content ul {
+	margin-bottom: 20px;
+}
+
+.devlog-article-content h2 {
+	margin: 34px 0 12px;
+	color: var(--deep-space);
+	font-size: 1.55rem;
+	letter-spacing: 0;
+}
+
+.devlog-article-content ul {
+	padding-left: 24px;
+}
+
+.devlog-article-content li {
+	padding-left: 4px;
+	margin-bottom: 6px;
+}
+
+.devlog-article-content li::marker {
+	color: var(--accent-blue);
+}
+
+.devlog-article-quote {
+	margin: 30px 0;
+	padding: 18px 24px;
+	border-left: 4px solid var(--accent-blue);
+	background: rgba(33, 64, 130, 0.06);
+	color: var(--navy);
+	font-size: 1.15rem;
+	font-weight: 600;
+}
+
+.devlog-article-footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: 18px;
+	padding-top: 22px;
+	border-top: 1px solid rgba(33, 64, 130, 0.2);
+}
+
+.devlog-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.devlog-tags span {
+	padding: 4px 10px;
+	border: 1px solid rgba(33, 64, 130, 0.25);
+	color: var(--navy);
+	font-size: 0.75rem;
+	font-weight: 700;
+}
+
+@media (max-width: 600px) {
+	.devlog-article-header h1 {
+		font-size: 2.1rem;
+	}
+
+	.devlog-article-intro {
+		font-size: 1.05rem;
+	}
+
+	.devlog-article-content {
+		font-size: 0.98rem;
+	}
+
+	.devlog-article-quote {
+		padding: 16px 18px;
+	}
+}

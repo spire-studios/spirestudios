@@ -6,7 +6,7 @@
     <title>About | Spire Studios</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="icon" type="image/x-icon" href="../Lspire_v2.png" id="favicon">
-    <script src="../script.js"></script>
+    <script src="script.js"></script>
     <style>
         .member {
 display: flex; justify-content: baseline; margin: 40px; flex-direction: column;  text-align: center;
@@ -18,14 +18,20 @@ display: flex; justify-content: baseline; margin: 40px; flex-direction: column; 
         <div class="nav-container">
             <div class="brand"><a href="https://www.spirestudios.org" style="text-decoration: none; color: inherit; display: flex;">
                 <img src="../Lspire_v2.png" alt="Spire Logo" class="nav-icon"></a>
-                <a href="https://www.spirestudios.org" style="text-decoration: none; color: inherit; display: flex;">
+                <a href="https://www.spirestudios.org/" style="text-decoration: none; color: inherit; display: flex;">
                 <span>SPIRE STUDIOS</span></a>
             </div>
-            <ul class="nav-links">
-                <li><a href="https://www.spirestudios.org/about" class="shortcut">ABOUT</a></li>
-                <li><a href="https://www.spirestudios.org/devlog" class="shortcut">DEVLOG</a></li>
-                <li><button class="contact-pill" id="contact-trigger">CONTACT</button></li>
-            </ul>
+            <div class="nav-menu">
+                <input class="nav-menu-toggle" type="checkbox" id="nav-menu-toggle" aria-label="Toggle navigation menu">
+                <label class="nav-menu-button" for="nav-menu-toggle">
+                    <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+                </label>
+                <ul class="nav-links">
+                    <li><a href="https://www.spirestudios.org/about" class="shortcut">ABOUT</a></li>
+                    <li><a href="https://www.spirestudios.org/devlog" class="shortcut">DEVLOG</a></li>
+                    <li><button class="contact-pill" id="contact-trigger">CONTACT</button></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
