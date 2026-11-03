@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!-- Template File for Website-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games | Spire Studios</title>
+    <link rel="stylesheet" href="games.css">
+    <link rel="icon" type="image/x-icon" href="../Lspire_v2.png" id="favicon">
+    <script src="script.js"></script>
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh; /* Viewport height */ margin: 0;">
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <div class="brand"><a href="https://www.spirestudios.org" style="text-decoration: none; color: inherit; display: flex;">
+                <img src="../Lspire_v2.png" alt="Spire Logo" class="nav-icon"></a>
+                <a href="https://www.spirestudios.org" style="text-decoration: none; color: inherit; display: flex;">
+                <span>SPIRE STUDIOS</span></a>
+            </div>
+            <div class="nav-menu">
+                <input class="nav-menu-toggle" type="checkbox" id="nav-menu-toggle" aria-label="Toggle navigation menu">
+                <label class="nav-menu-button" for="nav-menu-toggle">
+                    <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+                </label>
+                <ul class="nav-links">
+                    <li><a href="https://www.spirestudios.org/about" class="shortcut">ABOUT</a></li>
+                    <li><a href="https://www.spirestudios.org/devlog" class="shortcut">DEVLOG</a></li>
+                    <li><button class="contact-pill" id="contact-trigger">CONTACT</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Page content -->
+    <section id="page_body" class="page-content-dark games-page" style="flex: 1;">
+        <div class="games-catalog">
+            <header class="catalog-header">
+                <p class="catalog-eyebrow">SPIRE STUDIOS · GAME LIBRARY</p>
+                <h1>Find your next adventure.</h1>
+                <p class="catalog-intro">Explore the worlds and challenges created by Spire Studios.</p>
+            </header>
+
+            <div class="games-grid" aria-label="Games">
+                <article class="game-card">
+                    <a class="game-artwork" href="https://python-syntax.itch.io/fallen-keep" aria-label="Play Fallen Keep">
+                        <img src="../fallenkeep.png" alt="Fallen Keep game artwork">
+                        <span class="game-status">OUT NOW</span>
+                    </a>
+                    <div class="game-card-content">
+                        <p class="game-category">ACTION · ADVENTURE</p>
+                        <h2>Fallen Keep</h2>
+                        <p class="game-description">Take up the mantle of a magical knight and venture through a cavernous stronghold filled with globs, skeletons, and treasure. Gather keys and uncover the way forward.</p>
+                        <a class="game-link" href="https://python-syntax.itch.io/fallen-keep">
+                            <span>PLAY GAME</span><span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="game-card">
+                    <a class="game-artwork" href="https://python-syntax.itch.io/bomb-blitz" aria-label="Play Bomb Blitz">
+                        <img src="../bombblitz.png" alt="Bomb Blitz game artwork">
+                        <span class="game-status">OUT NOW</span>
+                    </a>
+                    <div class="game-card-content">
+                        <p class="game-category">ARCADE · STRATEGY</p>
+                        <h2>Bomb Blitz</h2>
+                        <p class="game-description">Defuse bombs before the clock runs out. Keep your cool as explosives arrive faster, new types appear, and every decision counts toward your survival.</p>
+                        <a class="game-link" href="https://python-syntax.itch.io/bomb-blitz">
+                            <span>PLAY GAME</span><span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer-->
+    <footer style="flex-shrink: 0;">
+        <div class="footer-bottom">
+            <div style="display: flex; align-items: center;">
+            <img src="../spire_light.png" alt="Small Spire Icon" class="footer-mini-logo">
+            <p>SPIRE STUDIOS</p></div>
+            <div class="socials">
+                <a href="#">X / TWITTER</a>
+                <a href="https://www.youtube.com/@spirestudiosdev">YOUTUBE</a>
+                <a href="#">LINKEDIN</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact Us</h2>
+            <p><strong>Email:</strong> developer@spirestudios.org</p>
+            <p><strong>Social Media:</strong> Follow us on <a href="https://www.youtube.com/@spirestudiosdev" target="_blank">YouTube</a> and other platforms.</p>
+        </div>
+    </div>
+
+</body>
+</html>

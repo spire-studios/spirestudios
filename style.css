@@ -225,6 +225,8 @@ h2 { font-size: 2.5rem; letter-spacing: 2px; margin-top: 10px; }
 
 .page-content { padding: 100px 40px; background: #f8fafc; color: var(--deep-space); }
 
+.page-content-dark { padding: 100px 40px; color: #f8fafc; background: var(--game-back); }
+
 /* Studio Culture */
 .studio-culture { padding: 100px 40px; background: #f8fafc; color: var(--deep-space); }
 
